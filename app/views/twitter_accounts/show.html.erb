@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Showing Tweets For:</strong>
+  <%= @twitter_account.handle %>
+</p>
+
+<ul>
+  <% @tweets.each do |tweet| %>
+    <li><%=@twitter_account.handle%>: <%=tweet.body%></li>
+  <% end %>
+</ul>
+
+<%= link_to 'Edit', edit_twitter_account_path(@twitter_account) %> |
+<%= link_to 'Back', twitter_accounts_path %>

@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Metatest::Application.config.secret_key_base = '0030ae80d1dbade4e693ed6484b8518dfe573444985e14ed2c753d35b08bc0046ec08a626f74f37d037847325f0612cc17c73e891a95add2ddb9d7330bed4b61'
+Metatest::Application.config.secret_key_base = ENV['SECRET_TOKEN']

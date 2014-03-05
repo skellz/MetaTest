@@ -1,5 +1,5 @@
 class TwitterAccountsController < ApplicationController
-  before_action :set_twiter_account, only: [:show, :edit, :update, :destroy]
+  before_action :set_twitter_account, only: [:show, :edit, :update, :destroy]
 
   def index
     @twitter_accounts = TwitterAccount.all 

@@ -33,7 +33,7 @@ group :doc do
 end
 
 gem 'puma'
-gem 'twitter'
+gem 'twitter', '~>5.7.1'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
